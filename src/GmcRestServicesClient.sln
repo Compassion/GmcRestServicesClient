@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmcRestServicesClient", "GmcRestServicesClient\GmcRestServicesClient.csproj", "{39149FE6-4FD1-44F3-BACB-A2AFDD7B367C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmcRestServicesClient.Tests", "GmcRestServicesClient.Tests\GmcRestServicesClient.Tests.csproj", "{A8838A32-3EB4-47D4-AFE3-6F7E4A6F752D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39149FE6-4FD1-44F3-BACB-A2AFDD7B367C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39149FE6-4FD1-44F3-BACB-A2AFDD7B367C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39149FE6-4FD1-44F3-BACB-A2AFDD7B367C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39149FE6-4FD1-44F3-BACB-A2AFDD7B367C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8838A32-3EB4-47D4-AFE3-6F7E4A6F752D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8838A32-3EB4-47D4-AFE3-6F7E4A6F752D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8838A32-3EB4-47D4-AFE3-6F7E4A6F752D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8838A32-3EB4-47D4-AFE3-6F7E4A6F752D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
