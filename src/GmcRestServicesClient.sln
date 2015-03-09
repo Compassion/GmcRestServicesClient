@@ -5,6 +5,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmcRestServicesClient", "Gm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmcRestServicesClient.Tests", "GmcRestServicesClient.Tests\GmcRestServicesClient.Tests.csproj", "{A8838A32-3EB4-47D4-AFE3-6F7E4A6F752D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{C48C9FE4-C645-4F8E-BC10-4932745CB158}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\GmcRestServicesClient.nuspec = nuspec\GmcRestServicesClient.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{21B58C38-5494-4DBC-AF71-D0AB6199157A}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\content\app.config.install.xdt = nuspec\content\app.config.install.xdt
+		nuspec\content\app.config.uninstall.xdt = nuspec\content\app.config.uninstall.xdt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,5 +33,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21B58C38-5494-4DBC-AF71-D0AB6199157A} = {C48C9FE4-C645-4F8E-BC10-4932745CB158}
 	EndGlobalSection
 EndGlobal

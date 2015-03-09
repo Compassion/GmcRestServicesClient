@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GmcRestServicesClient</id>
+    <title>GMC Rest Services Client</title>
+    <version>1.0.0</version>
+    <authors>Lucas Pickstone</authors>
+    <owners>Compassion Australia</owners>
+    <iconUrl>http://www.compassion.com.au/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Allows easy .Net integration with GMC's Mashery read-only REST web services.</description>
+    <releaseNotes>
+      1.0.0 - Initial release.
+    </releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <files>
+      <file src="..\GmcRestServicesClient\bin\Release\GmcRestServicesClient.dll" target="lib" />
+    </files>
+    <dependencies>
+      <dependency id="AutoMapper" version="3.3.1" />
+      <dependency id="RestSharp " version="105.0.1" />
+    </dependencies>
+  </metadata>
+</package>
