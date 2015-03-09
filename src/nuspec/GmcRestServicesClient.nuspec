@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>GmcRestServicesClient</id>
     <title>GMC Rest Services Client</title>
@@ -13,12 +13,12 @@
       1.0.0 - Initial release.
     </releaseNotes>
     <copyright>Copyright 2015</copyright>
-    <files>
-      <file src="..\GmcRestServicesClient\bin\Release\GmcRestServicesClient.dll" target="lib" />
-    </files>
     <dependencies>
       <dependency id="AutoMapper" version="3.3.1" />
       <dependency id="RestSharp " version="105.0.1" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="..\GmcRestServicesClient\bin\Release\GmcRestServicesClient.dll" target="lib" />
+  </files>
 </package>
