@@ -20,5 +20,7 @@
   </metadata>
   <files>
     <file src="..\GmcRestServicesClient\bin\Release\GmcRestServicesClient.dll" target="lib" />
+    <file src="content\app.config.install.xdt" target="content" />
+    <file src="content\app.config.uninstall.xdt" target="content" />
   </files>
 </package>
