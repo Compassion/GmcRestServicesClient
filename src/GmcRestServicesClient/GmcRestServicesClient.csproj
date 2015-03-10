@@ -53,6 +53,7 @@
     <Compile Include="AutoMapper\DateConverter.cs" />
     <Compile Include="ChildImageFormat.cs" />
     <Compile Include="ChildImageType.cs" />
+    <Compile Include="IGmcRestService.cs" />
     <Compile Include="Models\CdspImplementor.cs" />
     <Compile Include="Models\ChildCaseStudy.cs" />
     <Compile Include="Models\ChildExitDetails.cs" />
