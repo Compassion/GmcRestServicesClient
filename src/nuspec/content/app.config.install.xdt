@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
-    <appSettings>
-        <add key="GmcRestServicesUrl" value="https://api2.compassion.com/iptest/ci/v1/" xdt:Transform="Insert" />
-        <add key="GmcRestServicesClientApiKey" value="" xdt:Transform="Insert" />
-    </appSettings>
+  <appSettings xdt:Transform="InsertIfMissing">
+    <add key="GmcRestServicesUrl" value="https://api2.compassion.com/iptest/ci/v1/" xdt:Transform="Insert" />
+    <add key="GmcRestServicesClientApiKey" value="" xdt:Transform="Insert" />
+  </appSettings>
 </configuration>
