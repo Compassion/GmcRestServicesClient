@@ -98,6 +98,7 @@ namespace GmcRestServicesClient.Tests
             const int height = 123;
             const int width = 456;
             const int dpi = 789;
+            const int quality = 951;
             const ChildImageFormat childImageFormat = ChildImageFormat.Jpeg;
             const ChildImageType childImageType = ChildImageType.Headshot;
 
@@ -110,13 +111,14 @@ namespace GmcRestServicesClient.Tests
                 .Return(returnedRestObject);
 
             var gmcRestService = new GmcRestService(restService);
-            var childImage = gmcRestService.GetChildImage(childKey, height, width, dpi, childImageFormat, childImageType);
+            var childImage = gmcRestService.GetChildImage(childKey, height, width, dpi, quality, childImageFormat, childImageType);
 
             Assert.That(childImage, Is.EqualTo(returnedRestObject));
-            Assert.That(calledParameters.Count, Is.EqualTo(5));
+            Assert.That(calledParameters.Count, Is.EqualTo(6));
             Assert.That(calledParameters["height"], Is.EqualTo(height.ToString()));
             Assert.That(calledParameters["width"], Is.EqualTo(width.ToString()));
             Assert.That(calledParameters["dpi"], Is.EqualTo(dpi.ToString()));
+            Assert.That(calledParameters["quality"], Is.EqualTo(quality.ToString()));
             Assert.That(calledParameters["imageFormat"], Is.EqualTo(childImageFormat.ToString()));
             Assert.That(calledParameters["imageType"], Is.EqualTo(childImageType.ToString()));
 
@@ -246,7 +248,7 @@ namespace GmcRestServicesClient.Tests
                 .Return(returnedRestObject);
 
             var gmcRestService = new GmcRestService(restService);
-            var localChurchPartner = gmcRestService.GetChurchPartner(localChurchPartnerId);
+            var localChurchPartner = gmcRestService.GetLocalChurchPartner(localChurchPartnerId);
 
             Assert.NotNull(localChurchPartner);
             Assert.That(localChurchPartner.LocalChurchPartnerID, Is.EqualTo(localChurchPartnerId));

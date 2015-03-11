@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.Mappers;
 using GmcRestServicesClient.AutoMapper;
@@ -71,7 +68,7 @@ namespace GmcRestServicesClient
             return Mapper.Map<ChildCaseStudy>(childCaseStudyRest);
         }
 
-        public ChildImage GetChildImage(string childKey, int? height = null, int? width = null, int? dpi = null, ChildImageFormat? imageFormat = null, ChildImageType? imageType = null)
+        public ChildImage GetChildImage(string childKey, int? height = null, int? width = null, int? dpi = null, int? quality = null, ChildImageFormat? imageFormat = null, ChildImageType? imageType = null)
         {
             var parameters = new Dictionary<string, string>();
             if (height.HasValue)
@@ -80,6 +77,8 @@ namespace GmcRestServicesClient
                 parameters.Add("width", width.ToString());
             if (dpi.HasValue)
                 parameters.Add("dpi", dpi.ToString());
+            if (quality.HasValue)
+                parameters.Add("quality", quality.ToString());
             if (imageFormat.HasValue)
                 parameters.Add("imageFormat", imageFormat.ToString());
             if (imageType.HasValue)
@@ -126,7 +125,7 @@ namespace GmcRestServicesClient
             return Mapper.Map<CspImplementor>(cdspImplementorRest);
         }
 
-        public LocalChurchPartner GetChurchPartner(int localChurchPartnerId)
+        public LocalChurchPartner GetLocalChurchPartner(int localChurchPartnerId)
         {
             var cdspImplementorRest = restService.Get<LocalChurchPartnerRest>(string.Format("localchurchpartners/{0}", localChurchPartnerId));
             return Mapper.Map<LocalChurchPartner>(cdspImplementorRest);
