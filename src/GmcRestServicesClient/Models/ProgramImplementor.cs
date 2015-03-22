@@ -57,7 +57,7 @@ namespace GmcRestServicesClient.Models
         /// <summary>
         /// Key identifying the local church partner which is implementing the CSP or CDSP program
         /// </summary>
-        public string LocalChurchPartnerID { get; set; }
+        public int LocalChurchPartnerID { get; set; }
         
         /// <summary>
         /// Name of the local church partner
@@ -132,7 +132,7 @@ namespace GmcRestServicesClient.Models
         /// <summary>
         /// Identifies community
         /// </summary>
-        public string CommunityID { get; set; }
+        public int CommunityID { get; set; }
         
         public string StatusComment { get; set; }
         

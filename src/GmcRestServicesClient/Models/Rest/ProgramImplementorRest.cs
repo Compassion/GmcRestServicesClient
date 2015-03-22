@@ -22,7 +22,7 @@
         
         public string Description { get; set; }
         
-        public string LocalChurchPartnerID { get; set; }
+        public int LocalChurchPartnerID { get; set; }
         
         public string OrganizationName { get; set; }
         
@@ -52,7 +52,7 @@
         
         public string CountryCommonName { get; set; }
         
-        public string CommunityID { get; set; }
+        public int CommunityID { get; set; }
         
         public string StatusComment { get; set; }
         

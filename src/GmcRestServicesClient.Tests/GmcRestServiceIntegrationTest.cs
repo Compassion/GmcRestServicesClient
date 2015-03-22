@@ -16,7 +16,7 @@ namespace GmcRestServicesClient.Tests
     {
         private const string BaseUrl = "https://api2.compassion.com/iptest/ci/v1/";
 
-        private const string ApiKey = "ee8d58du8phxa6z79bme9mkk"; // Set this to your Mashery API key for testing.
+        private const string ApiKey = ""; // Set this to your Mashery API key for testing.
 
         private GmcRestService service;
 

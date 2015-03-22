@@ -3,13 +3,14 @@
   <metadata>
     <id>GmcRestServicesClient</id>
     <title>GMC Rest Services Client</title>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Lucas Pickstone</authors>
     <owners>Compassion Australia</owners>
     <iconUrl>http://www.compassion.com.au/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Allows easy .Net integration with GMC's Mashery read-only REST web services.</description>
     <releaseNotes>
+      1.0.2 - Changed CommunityID and LocalChurchPartnerID of ProgramImplementor class to be ints, rather than strings. 
       1.0.1 - Added documentation from Mashery. Added missing "quality" parameter to GetChildImage method. Renamed GetChurchPartner method to GetLocalChurchPartner to match Mashery documentation.
       1.0.0 - Initial release.
     </releaseNotes>
