@@ -488,9 +488,9 @@ namespace GmcRestServicesClient.Models
 
     public class ChildCaseStudyFamilySize
     {
-        public string TotalFamilyFemalesUnder18 { get; set; }
+        public int? TotalFamilyFemalesUnder18 { get; set; }
 
-        public string TotalFamilyMalesUnder18 { get; set; }
+        public int? TotalFamilyMalesUnder18 { get; set; }
 
         /// <summary>
         ///  Other sibling in Compassion program 
