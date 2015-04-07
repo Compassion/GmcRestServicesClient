@@ -83,8 +83,8 @@ namespace GmcRestServicesClient
                 parameters.Add("imageFormat", imageFormat.ToString());
             if (imageType.HasValue)
                 parameters.Add("imageType", imageType.ToString());
-            
-            return restService.Get<ChildImage>(string.Format("children/{0}/image", childKey), parameters);
+
+            return restService.Get<ChildImage>(string.Format("children/{0}/image/2015/03", childKey), parameters);
         }
 
         public Child GetChildInformation(string childKey)

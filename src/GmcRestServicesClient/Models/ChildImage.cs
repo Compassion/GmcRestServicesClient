@@ -42,6 +42,11 @@ namespace GmcRestServicesClient.Models
         /// The height of the child's headshot. Returned only if ImageType == Raw.
         /// </summary>
         public int HeightCoordinate { get; set; }
+
+        /// <summary>
+        /// The date the image was stored in GMCCompass database.
+        /// </summary>
+        public DateTime ImageDate { get; set; }
 	}
 
     public class ChildImageData
