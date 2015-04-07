@@ -78,7 +78,7 @@ namespace GmcRestServicesClient.Tests
             IDictionary<string, string> calledParameters = null;
 
             var restService = MockRepository.GenerateMock<IRestService>();
-            restService.Expect(r => r.Get<ChildImage>(Arg<string>.Is.Equal("children/AB123456/image"), Arg<IDictionary<string, string>>.Is.Anything))
+            restService.Expect(r => r.Get<ChildImage>(Arg<string>.Is.Equal("children/AB123456/image/2015/03"), Arg<IDictionary<string, string>>.Is.Anything))
                 .WhenCalled(m => calledParameters = m.Arguments[1] as IDictionary<string, string>)
                 .Return(returnedRestObject);
 
@@ -106,7 +106,7 @@ namespace GmcRestServicesClient.Tests
             IDictionary<string, string> calledParameters = null;
 
             var restService = MockRepository.GenerateMock<IRestService>();
-            restService.Expect(r => r.Get<ChildImage>(Arg<string>.Is.Equal("children/AB123456/image"), Arg<IDictionary<string, string>>.Is.Anything))
+            restService.Expect(r => r.Get<ChildImage>(Arg<string>.Is.Equal("children/AB123456/image/2015/03"), Arg<IDictionary<string, string>>.Is.Anything))
                 .WhenCalled(m => calledParameters = m.Arguments[1] as IDictionary<string, string>)
                 .Return(returnedRestObject);
 
