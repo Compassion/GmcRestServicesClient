@@ -22,7 +22,7 @@ namespace GmcRestServicesClient.Models
         /// <summary>
         /// Age of the child in years
         /// </summary>
-        public string Age { get; set; }
+        public int Age { get; set; }
 	    
         /// <summary>
         /// Date on which the exit is final
