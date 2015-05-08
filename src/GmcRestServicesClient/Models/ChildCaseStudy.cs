@@ -371,7 +371,7 @@ namespace GmcRestServicesClient.Models
 
     public class ChildCaseStudyNaturalParents
     {
-        public bool NaturalParentsTogether { get; set; }
+        public bool? NaturalParentsTogether { get; set; }
 
         /// <summary>
         /// This is free text.
