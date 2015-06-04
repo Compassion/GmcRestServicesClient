@@ -3,14 +3,13 @@
   <metadata>
     <id>GmcRestServicesClient</id>
     <title>GMC Rest Services Client</title>
-    <version>1.0.6</version>
+    <version>1.0.5</version>
     <authors>Lucas Pickstone</authors>
     <owners>Compassion Australia</owners>
     <iconUrl>http://www.compassion.com.au/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Allows easy .Net integration with GMC's Mashery read-only REST web services.</description>
     <releaseNotes>
-      1.0.6 - Changed PlannedCompletionDate to be nullable.
       1.0.5 - Changed ChildExitDetails.Age property from string to int.
       1.0.4 - Added ImageDate to the Model for GetChildImage. Now using the 2015/03 version of the GetChildImage REST request.
       1.0.3 - Changed ChildCaseStudyFamilySize total fields to be nullable ints, rather than strings.
