@@ -366,7 +366,7 @@ namespace GmcRestServicesClient.Models
         /// <summary>
         /// Date the child is expected to complete the Ministry Program.
         /// </summary>
-        public DateTime PlannedCompletionDate { get; set; }
+        public DateTime? PlannedCompletionDate { get; set; }
     }
 
     public class ChildCaseStudyNaturalParents
