@@ -38,17 +38,17 @@ namespace GmcRestServicesClient.Models.Rest
 
         public bool ChildAttendingSchool { get; set; }
 
-        public string USSchoolEquivalent { get; set; }
+        public string UsSchoolEquivalent { get; set; }
         
         public string SchoolPerformance { get; set; }
 
-        public string CDSPCompletionDate { get; set; }
+        public string CdspCompletionDate { get; set; }
 
-        public bool CSPGraduateFlag { get; set; }
+        public bool CspGraduateFlag { get; set; }
 
-        public string CSPEnrollDate { get; set; }
+        public string CspEnrollDate { get; set; }
 
-        public string CSPProject { get; set; }
+        public string CspProject { get; set; }
 
         public bool SponsorFlag { get; set; }
         

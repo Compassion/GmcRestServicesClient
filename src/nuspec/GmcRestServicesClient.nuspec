@@ -3,13 +3,14 @@
   <metadata>
     <id>GmcRestServicesClient</id>
     <title>GMC Rest Services Client</title>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <authors>Lucas Pickstone</authors>
     <owners>Compassion Australia</owners>
     <iconUrl>http://www.compassion.com.au/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Allows easy .Net integration with GMC's Mashery read-only REST web services.</description>
     <releaseNotes>
+      1.0.8 - Fixed bug where GetChildInformation service was not deserialising the properties USSchoolEquivalent, CDSPCompletionDate, CSPGraduateFlag, CSPEnrollDate and CSPProject.
       1.0.7 - Changed completion date to be nullable
       1.0.6 - Modified ChildCaseStudyNaturalParents.NaturalParentsTogether to be nullable.
       1.0.5 - Changed ChildExitDetails.Age property from string to int.
