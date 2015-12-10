@@ -1,6 +1,6 @@
 # GmcRestServicesClient
 
-.Net NuGet package that allows connecting to GMC's Mashery read-only REST web services. 
+.Net NuGet package that allows connecting to GMC's Mashery read-only REST web services. For GMC's new Compassion Connect web services, [a new package has been created](https://github.com/Compassion/CompassionConnectClient).
 
 ## Installation
 1. Add Compassion Australia's [MyGet](https://www.myget.org/") feed as a NuGet package source in Visual Studio.
